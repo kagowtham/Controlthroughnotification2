@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "668526718842",
+    "firebase_url": "https://control-through-notification.firebaseio.com",
+    "project_id": "control-through-notification",
+    "storage_bucket": "control-through-notification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668526718842:android:f2be33d5c647ea8f",
+        "android_client_info": {
+          "package_name": "com.kag.controlthroughnotification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668526718842-oaovktjl3cgppe09ffue6evvillb3dl8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCclvXMlUlFx4Srd5ZE66GR0cgrtlBrHfQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

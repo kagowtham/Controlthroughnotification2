@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.kag.controlthroughnotification.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/turn_of_notification_access"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/about"
+        android:title="@string/about"
+        />
+    <item
+        android:id="@+id/start"
+        android:title="@string/start_screen"
+        />
+</menu>

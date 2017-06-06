@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.kag.controlthroughnotification.EditTheKey"
+    tools:showIn="@layout/activity_edit_the_key"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_title"
+        android:layout_margin="@dimen/text_margin"
+        android:text="Title Name"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="25dp" />
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="0dp" android:layout_weight="1"
+
+    >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv1"
+        android:text="Enter two Key words \n for this function:"
+        android:textSize="22dp"
+                android:textColor="@android:color/black"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/tv2"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv2"
+                android:text="first key word:"
+                android:layout_below="@+id/tv1"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/key1"
+                android:hint="Enter the first key"
+                android:layout_below="@id/tv2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv3"
+                android:text="second key word:"
+                android:layout_below="@id/key1"
+                android:layout_marginTop="20dp"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/key2"
+                android:hint="Enter the second key"
+                android:layout_below="@id/tv3"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/key2"
+                android:id="@+id/description"
+                android:text="@string/large_text"
+                android:layout_marginTop="20dp" />
+        </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView1"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+
+</LinearLayout>
